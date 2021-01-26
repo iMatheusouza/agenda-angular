@@ -1,0 +1,33 @@
+article.contact-container {
+  display: flex;
+  background-color: #dadada;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.20);
+  background-color: #1d1d1d;
+  figure {
+    margin: 0px;
+    margin-right: 16px;
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 32px;
+    }
+  }
+  div.contact-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    p {
+      margin: 0px;
+      margin-right: 24px;
+      max-width: 200px;
+    }
+    div.contact-name-email {
+      display: flex;
+      margin-bottom: 8px;
+    }
+  }
+
+}
+

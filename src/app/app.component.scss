@@ -1,0 +1,11 @@
+@import "shared/variables.scss";
+
+div.main-container {
+  background-color: $darkBackground;
+  max-width: 560px;
+  height: 80%;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 2px 2px 2px $darkBackground;
+  padding: 24px 16px;
+}
