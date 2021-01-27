@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  showContacts: boolean = true;
+
+  showHide() {
+    this.showContacts = !this.showContacts
+  }
 }

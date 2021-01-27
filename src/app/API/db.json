@@ -1,0 +1,22 @@
+{
+  "contacts": [
+    {
+      "id": 2,
+      "name": "Moe Szyslak",
+      "email": "moe@bar.com",
+      "tel": [
+        "999-410-2155",
+        "887-598-459"
+      ],
+      "celphone": "598-215-999",
+      "avatar": "https://picsum.photos/id/65/64"
+    },
+    {
+      "name": "Dani Milkman",
+      "email": "dani@email.com",
+      "celphone": "9567102947",
+      "avatar": "https://picsum.photos/id/74/64",
+      "id": 22
+    }
+  ]
+}

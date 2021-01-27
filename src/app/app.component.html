@@ -1,3 +1,12 @@
+<input type="checkbox" (click)="showHide()">
 <div class="main-container">
-  <app-contacts></app-contacts>
+
+    <app-contacts
+      *ngIf="showContacts; else elseBlock"
+    ></app-contacts>
+
+    <ng-template #elseBlock>
+      <app-contact-form></app-contact-form>
+    </ng-template>
+
 </div>

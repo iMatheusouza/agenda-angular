@@ -1,0 +1,39 @@
+@import "../../shared/variables.scss";
+
+
+form {
+  div.form-row {
+    display: flex;
+    margin-bottom: 16px;
+    label {
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
+      width: 76px;
+    }
+
+    input {
+      background-color: $darkContainer;
+      box-shadow: $shadow16;
+      border: 1px solid #FBFBFB;
+      height: 24px;
+      flex: 1;
+      color: $textOnDark;
+      font-size: 16px;
+    }
+  }
+
+  button {
+    height: 40px;
+    width: 80px;
+    color: $textOnDark;
+    font-size: 16px;
+    background-color: $darkContainer;
+    box-shadow: $shadow16;
+    border: none;
+    cursor: pointer;
+    &:active{
+      background-color: $darkContainerActive;
+    }
+  }
+}

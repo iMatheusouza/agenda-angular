@@ -1,21 +1,27 @@
 <article
   class="contact-container"
+  *ngFor="let contact of allContacts"
 >
   <figure>
     <!-- <img src="https://picsum.photos/64/64"> -->
-    <img src="http://lorempixel.com.br/64/64">
+    <img [src]="contact.avatar">
+    <!-- <img [src]="https://picsum.photos/id/contact.id/64/64"> -->
   </figure>
   <div class="contact-details">
     <div class="contact-name-email">
       <p>
-        Matheus Freitas
+        {{ contact.name }}
       </p>
       <p>
-        Email: email@email.com
+        {{ contact.email }}
       </p>
     </div>
     <p>
-      Telefone: +559990090
+      {{ contact.celphone }}
     </p>
+  </div>
+  <div class="action-icons">
+    <button (click)="deleteUser(contact.id)">X</button>
+    <button>Edit</button>
   </div>
 </article>

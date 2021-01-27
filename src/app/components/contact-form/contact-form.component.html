@@ -1,0 +1,24 @@
+<form
+  (ngSubmit)="onSubmit()"
+  [formGroup]="form"
+>
+  <div class="form-row">
+    <label for="name">Nome:</label>
+    <input type="text" formControlName="name" id="name">
+  </div>
+
+  <div class="form-row">
+    <label for="email">Email:</label>
+    <input type="email" formControlName="email" id="email">
+  </div>
+
+  <div class="form-row">
+    <label for="celphone">celphone:</label>
+    <input type="tel" formControlName="celphone" id="celphone">
+  </div>
+
+  <button type="submit" [disabled]="false">
+    Save
+  </button>
+</form>
+  <button (click)="testeSub()" value="">Testar</button>
